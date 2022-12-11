@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sports News</title>
+  
+   <!-- Internal CSS -->
+   <style>
+      body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+      overflow: hidden;
+      background-color: rgb(0, 67, 73);
+      }
+
+      .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+
+      /* hover style for nav links */
+      .topnav a:hover {
+      background-color: rgb(31, 124, 124);
+      color: rgb(255, 253, 253);
+      }
+
+      .topnav a.active {
+      background-color: #101e25;
+      color: white;
+      }
+
+      /* media queries */
+      @media screen and (max-width: 600px) {
+      /*  :first-child advanced selector*/
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+         float: right;
+         display: block;
+      }
+      }
+
+      @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+         position: relative;
+         right: 0;
+         top: 0;
+      }
+      .topnav.responsive a {
+         float: none;
+         display: block;
+         text-align: left;
+      }
+      }
+
+      .banner {
+      background: 
+         linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+         ),
+         url(https://images.pexels.com/photos/61135/pexels-photo-61135.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 300px;
+      position: relative;
+      background-position: 10% 0% 0 0;
+      margin-bottom: 30px;
+      }
+
+      .bh2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      color: white;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 2rem;
+      transform: translate(-50%, -50%);
+      }
+
+      .bh3 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      color: rgb(206, 245, 225);
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      font-size: 1.5rem;
+      transform: translate(-50%, -50%);
+      }
+
+
+      article, h2 {
+      padding: 5px;
+      }
+
+      
+      .footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      height: auto;
+      padding: 20px 0;
+      width: 100%;
+      background-color: rgb(0, 67, 73);
+      color: white;
+      text-align: center;
+      }
+
+      .avbl {
+        padding: 10px;
+        overflow:hidden;
+         background-color: rgb(250, 246, 241);
+         color: rgb(7, 3, 3);
+      }
+
+      .bio {
+        padding: 10px;
+      }
+      .profimage {
+        float: left;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      footer a:hover {
+        color: rgb(146, 131, 131);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      img, iframe {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin: 10px 20px;
+      }
+      .clear {
+      clear: left;
+      }
+
+   </style>
+</head>
+<body>
+   <!-- header element -->
+   <header>
+      <nav class="topnav" id="myTopnav">
+         <a href="Main Page.html" class="active">Home</a> 
+         <a href="Basketball.html" class="active">Basketball</a>
+         <a href="football.html" class="active">Football</a>
+         <a href="tennis.html" class="active">Tennis and other sports</a>
+         <a href="contact.html" class="active">Contact us</a>
+      </nav>
+   </header>
+   <!-- HTML5 main element -->
+   <main>
+      <!-- Banner image -->
+      <!-- HTML5 section tag -->
+      <section class="banner">
+         <h2 class="bh2">Welcome to our website </h2>
+         <h3 class="bh3">Everything you need to know about sports!</h3>
+      </section>
+     
+      
+      <section class="bio">
+        <h1><i>About us</i></h1>
+        <p>We are leading sports news website. The site features news, articles, live coverage of various sports including Basket ball, football, tennis and many others..</p>
+             <div class="clear"></div>
+      </section><br><br>
+      
+      <h2>Latest sports news articles</h2>
+      <section class="avbl">
+         <img src="https://andscape.com/wp-content/uploads/2022/12/PHOTO-2022-06-27-17-54-26-e1670556733679.jpg?w=1400" alt="Basket Ball">
+            <h3 style="color: rgb(25, 98, 98); margin-top: 10px;">Behind former NBA forward Luol Deng’s coaching and charity, South Sudan basketball is on the rise</h3>
+            <p>Along with Brooklyn Nets assistant Royal Ivey, the retired player has led the African nation to within one win of qualifying for the 2023 FIBA World Cup, As Luol Deng represented Great Britain during the opening ceremony of the 2012 London Games, he pondered what it would mean for his birth country of South Sudan to one day experience similar pride.
+
+Deng is president of the Republic of South Sudan Basketball Federation and is also on its coaching staff. South Sudan is one win away from qualifying for the 2023 FIBA World Cup, which would be a first for Africa’s youngest country. The Bright Stars need to win just one of three games against other African countries from Feb. 24-Feb. 26, 2023, in Egypt to qualify for the tournament showcasing the world’s top men’s basketball teams. Qualifying for the World Cup could also eventually open the door for the first Olympic berth for war-ravaged South Sudan.</p> 
+            </section> <br><br>
+
+      <section class="avbl">
+         <img src="data:image/jpeg;base64,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" alt="Football">
+            
+<h3 style="color: rgb(25, 98, 98); margin-top: 10px;">Morroco beats Portugal 1-0</h3>
+            <p>Morocco became the first African nation to reach a World Cup semifinal as they stunned Portugal with a 1-0 win thanks to a Youssef En-Nesyri header.
+
+En-Nesyri's towering effort in the 42nd minute proved to be the only goal of the quarterfinal as Morocco held firm despite Portugal's dominance at Al Thumama Stadium. It meant Walid Regragui's side made history as they reached the final four of the competition, where they will face the winners of England's clash with France on Saturday evening.
+
+Before kickoff the focus was on Cristiano Ronaldo again as he started on the bench for the second successive game, having been left out of Portugal's starting lineup for their round-of-16 win against Switzerland.
+
+Morocco took a shock lead in the 42nd minute when they seized on a goalkeeping error from Diogo Costa, with En-Nesyri heading home Yahya Attiat-Allah's cross as the Portugal keeper hesitated.
+
+Bruno Fernandes almost equalised moments later when he produced an audacious half volley which rattled the crossbar, before Morocco spurned a great chance to go further ahead when Attiat-Allah skewed a shot wide after a fine counter-attack.
+
+Ronaldo came on in the 51st minute for his 196th Portugal cap -- equalling the FIFA men's record for international appearances held by Kuwait's Bader al-Mutawa in the process -- but he failed to make an impact.
+
+Morocco keeper Yassine Bounou produced a fingertip save to turn a driving shot from Joao Felix over the bar in the 83rd minute and was also called upon to stop an effort from Ronaldo in stoppage time.
+
+There were further late nerves for Morocco as substitute Walid Cheddira was sent off for two yellow cards in quick succession while Pepe headed wide in the dying stages, but Regragui's side held on for another memorable victory following their round-of-16 win against Spain.</p> 
+           </section> <br><br>
+
+      <section class="avbl">
+         <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2022/12/10/3580206-412798469.jpg?itok=yEyVa4My" alt="tinnes">
+            <h3 style="color: rgb(25, 98, 98); margin-top: 10px;">Fritz to meet Medvedev in the final of the Diriyah Tennis Cup</h3>
+             <p>RIYADH: Defending champion Daniil Medvedev and world No. 10 Taylor Fritz will compete in the final at the Diriyah Tennis Cup presented by Aramco. The pair enjoyed semifinal wins over Stan Wawrinka and Cameron Norrie respectively on Friday at the Diriyah Arena and will now battle it out for the $1 million prize money.
+n the day’s early match, world No. 7 Medvedev had to grind out a win against three-time Grand Slam winner Wawrinka. It was only in the ninth game in the first set that the Russian finally managed to break Wawrinka’s serve to finish the set 6-4. There were several serve breaks in the second set by both players, but after an hour and 21 minutes, the 25-year-old finished the game with a 6-4, 6-4 win over Wawrinka to maintain his phenomenal unbeaten run in Saudi Arabia.
+
+Medvedev has enjoyed his Diriyah Tennis Cup streak.
+
+“I have one more match to play tomorrow (Saturday) to be the two-times champion, but I liked the conditions of the weather in the desert, you know, I think the conditions are not easy to play because it’s windy but I like it which I benefit from it to win,” Medvedev told Arab News.
+</p> 
+           </section> <br><br>
+   </main>
+   <br><br>
+   <!-- HTML5 footer tag -->
+   <footer class="footer">
+     <!-- Email link -->
+       <a href="#"> <strong>All rights reserved &copy; 2022</strong></a><br>
+   </footer>
+
+</body>
+</html>
